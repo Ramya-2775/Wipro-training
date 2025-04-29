@@ -2,16 +2,15 @@ using System;
 
 public class HelloWorld
 {
-    public static void Main(string[] args)
+    static int add(int a,int b)
     {
-        int age = 22;
-        string name = "Ramya";
-        bool isStudent = true;
-        double fees =555.89;
+        return a + b;
+    }
+    static void Main()
+    {
+        int num1= 5;
+        int num2 = 8;
         
-        Console.WriteLine("name: "+ name);
-        Console.WriteLine("age: "+ age);
-        Console.WriteLine("bool: "+ isStudent);
-        Console.WriteLine("fees: "+ fees);
+        Console.WriteLine("Addition: " + add(num1,num2));
     }
 }
