@@ -5,14 +5,14 @@ class Program
     static void Main()
     {
         int[] arr = { 3, 5, 7, 8, 2, 9, 10 };
-        int target = 7;
+        int target = 7; // You can change this value
         bool found = false;
 
         for (int i = 0; i < arr.Length; i++)
         {
             if (arr[i] == target)
             {
-                Console.WriteLine(i);
+                Console.WriteLine("Element found at index: " + i);
                 found = true;
                 break;
             }
