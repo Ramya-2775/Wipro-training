@@ -5,7 +5,7 @@ class Program
     static void Main()
     {
         int[] arr = { 3, 5, 7, 8, 2, 9, 10 };
-        int target = 7; // You can change this value
+        int target = 7; 
         bool found = false;
 
         for (int i = 0; i < arr.Length; i++)
