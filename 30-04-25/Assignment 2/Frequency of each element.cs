@@ -1,24 +1,31 @@
 using System;
-using System.Collections.Generic;
 
 class Program
 {
     static void Main()
     {
         int[] arr = { 1, 2, 1, 3, 2, 1 };
-        Dictionary<int, int> freq = new Dictionary<int, int>();
+        int n = arr.Length;
 
-        foreach (int num in arr)
-        {
-            if (freq.ContainsKey(num))
-                freq[num]++;
-            else
-                freq[num] = 1;
-        }
+        bool[] visited = new bool[n];
 
-        foreach (var pair in freq)
+        for (int i = 0; i < n; i++)
         {
-            Console.WriteLine($"{pair.Key} occurs {pair.Value} time(s)");
+            if (visited[i] == true)
+                continue;
+
+            int count = 1;
+
+            for (int j = i + 1; j < n; j++)
+            {
+                if (arr[i] == arr[j])
+                {
+                    count++;
+                    visited[j] = true;
+                }
+            }
+
+            Console.WriteLine(arr[i] + " occurs " + count + " time(s)");
         }
     }
 }
