@@ -12,7 +12,7 @@ namespace linq.projects
         delegate void customdel(string s);
         class testclass
         {
-            private static customdel? multiMinushidel;
+            private static customdel multiMinushidel;
 
             static void hello(string s)
             {
