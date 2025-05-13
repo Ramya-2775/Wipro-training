@@ -14,12 +14,12 @@ namespace linq.projects
         {
             static void hello(string s)
             {
-                Console.WriteLine(s);
+                Console.WriteLine($,hello, {s});
             }
 
             static void goodbye(string s)
             {
-                Console.WriteLine(s);
+                Console.WriteLine($"goodbye,{s}");
             }
             static void Main()
             {
