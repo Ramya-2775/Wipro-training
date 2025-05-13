@@ -1,2 +1,2 @@
-# Wipro-training
+
 wipro training
