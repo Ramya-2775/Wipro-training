@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-/*class Program
+class Program
 {
     static async Task<string> TaskWithDelay(string name, int delay)
     {
@@ -22,4 +22,3 @@ using System.Threading.Tasks;
         Console.WriteLine($"First finished: {firstFinished.Result}");
     }
 }
-*/

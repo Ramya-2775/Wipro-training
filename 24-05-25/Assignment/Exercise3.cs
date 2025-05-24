@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 
 
-/*class Program
+class Program
 {
     static void ProcessItem(object item)
     {
@@ -24,4 +24,4 @@ using System.Threading.Tasks;
         Console.ReadLine(); 
     }
 }
-*/
+

@@ -1,6 +1,6 @@
 ﻿using System;
 using System.Threading;
-/*class Program
+class Program
 {
     static async Task RiskyTaskAsync(string name)
     {
@@ -28,4 +28,4 @@ using System.Threading;
             Console.WriteLine($"Exception: {ex.Message}");
         }
     }
-}*/
+}

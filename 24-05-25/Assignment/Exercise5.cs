@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Threading.Tasks;
 
-/*class Program
+class Program
 {
     static async Task<int> GetTemperatureAsync(string city)
     {
@@ -19,4 +19,4 @@ using System.Threading.Tasks;
             Console.WriteLine($"Temperature in {city}: {temp}°C");
         }
     }
-}*/
+}

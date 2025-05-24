@@ -1,7 +1,7 @@
 ﻿using System.Diagnostics;
 using System.Threading;
 
-/*class Program
+class Program
 {
     static async Task DownloadFileAsync(string fileName, int delay)
     {
@@ -23,4 +23,4 @@ using System.Threading;
         sw.Stop();
         Console.WriteLine($"All downloads completed in {sw.ElapsedMilliseconds} ms");
     }
-}*/
+}

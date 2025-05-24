@@ -2,7 +2,7 @@
 using System.Diagnostics;
 using System.Threading.Tasks;
 
-/*class Program
+class Program
 {
     static async Task SimulateWorkAsync(string name, int delay)
     {
@@ -28,4 +28,4 @@ using System.Threading.Tasks;
         sw.Stop();
         Console.WriteLine($"Sequential time: {sw.ElapsedMilliseconds} ms");
     }
-}*/
+}

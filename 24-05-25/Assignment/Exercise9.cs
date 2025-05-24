@@ -2,7 +2,7 @@
 using System.Threading;
 using System.Threading.Tasks;
 
-/*class Program
+class Program
 {
     static async Task DoWorkAsync(CancellationToken token)
     {
@@ -35,4 +35,4 @@ using System.Threading.Tasks;
             Console.WriteLine("Task was canceled.");
         }
     }
-}*/
+}

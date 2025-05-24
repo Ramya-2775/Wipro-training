@@ -2,7 +2,7 @@
 
 using System.Threading;
 
-/*class Program
+class Program
 {
     static void Task(string name, int delay)
     {
@@ -27,4 +27,4 @@ using System.Threading;
 
         Console.WriteLine("All tasks done.");
     }
-}*/
+}
