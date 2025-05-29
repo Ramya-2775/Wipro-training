@@ -1,0 +1,35 @@
+﻿@model IEnumerable<WebApplication12.Models.Employee>
+
+<h2>Employees</h2>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Designation</th>
+            <th>Email</th>
+            <th>Phone</th>
+            <th>Join Date</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var emp in Model)
+        {
+            <tr>
+                <td>@emp.Name</td>
+                <td>@emp.Designation</td>
+                <td>@emp.Email</td>
+                <td>@emp.Phone</td>
+                <td>@emp.JoinDate.ToShortDateString()</td>
+                <td>
+                    <a href="@Url.Action("Edit", "Employees", new { id = emp.Id })">Edit</a> |
+                    <a href="@Url.Action("Details", "Employees", new { id = emp.Id })">Details</a> |
+                    <a href="@Url.Action("Delete", "Employees", new { id = emp.Id })">Delete</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+<a class="btn btn-primary" href="@Url.Action("Create", "Employees")">Add New Employee</a>
