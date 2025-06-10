@@ -1,0 +1,42 @@
+﻿@model IEnumerable<Customer_Feedback_Portal.Models.Feedback>
+
+@{
+    ViewData["Title"] = "Feedback";
+}
+
+<h1>Feedback</h1>
+
+<p>
+    <a asp-action="Create" class="btn btn-success font-weight-bold">Create New</a>
+</p>
+<table class="table table-bordered table-striped table-hover text-center">
+    <thead class="thead-dark">
+        <tr>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Rating</th>
+            <th>Message</th>
+            <th>Submittedon</th>
+            <th>Action</th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>@item.Name</td>
+            <td>@item.Email</td>
+            <td>@item.Rating</td>
+            <td>@item.Message</td>
+            <td>@item.Submittedon</td>
+          
+
+            <td>
+                <a href="@Url.Action("Edit",new {id= item.Id})" class="btn btn-warning btn-sm">Edit</a> |
+                <a href="@Url.Action("Details",new {id= item.Id})" class="btn btn-info btn-sm">Details</a> |
+                <a href="@Url.Action("Delete",new {id= item.Id})" class="btn btn-danger btn-sm">Delete</a>
+                
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
