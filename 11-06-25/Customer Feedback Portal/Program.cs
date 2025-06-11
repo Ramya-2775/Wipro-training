@@ -12,9 +12,9 @@ builder.Services.AddDbContext<Customer_Feedback_PortalContext>(options =>
 
 // Register required services
 builder.Services.AddControllersWithViews();
-builder.Services.AddDistributedMemoryCache();       // ✅ Add this first
-builder.Services.AddSession();                      // ✅ Then this
-builder.Services.AddHttpContextAccessor();          // ✅ For injecting session in _Layout
+builder.Services.AddDistributedMemoryCache();       
+builder.Services.AddSession();                      
+builder.Services.AddHttpContextAccessor();          
 
 var app = builder.Build();
 
@@ -27,7 +27,7 @@ if (!app.Environment.IsDevelopment())
 app.UseStaticFiles();
 app.UseRouting();
 app.UseAuthorization();
-app.UseSession();  // ✅ Enables session usage
+app.UseSession();  
 
 // Default route
 app.MapControllerRoute(
